@@ -1,78 +1,177 @@
-mediator
-========
+Lokmont - Simple & Minimal Theme for Jekyll
+=======
+<p>Lokmont is a simple and completely responsive theme for Jekyll, suitable for any kind of bloggers and writers. It was created to be minimal, clean and at the same time functional.</p>
 
-A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme
-[Readium 2.0](http://www.svenread.com/readium-ghost-theme/). I use mediator on my own blog [The Base](http://blog.base68.com).
+Table of Contents
+-----------------
 
-Screenshots
---------
-![screenshot](/assets/images/screenshot1.jpg)
-![screenshot](/assets/images/screenshot2.jpg)
-![screenshot](/assets/images/screenshot3.jpg)
+*   [Demo](#demo)
+*   [Features](#features)
+*   [Deployment](#deployment)
+*   [Posts](#posts)
+*   [Other Authors](#authors)
+*   [Disqus Comments](#disqus)
+*   [Google Analytics](#analytics)
+*   [Update favicon](#favicon)
+*   [Credits](#credits)
+*   [License](#license)
+*   [Donate](#donate)
 
-Features
--------
-* Fully Responsive layout
-* Use header images in articles, if you want to (add tag "image" and url to the image in the front matter section of a post)
+* * *
+
+### Demo
+
+Check the theme in action [Demo](https://lokmont-jekyll.netlify.com/)
+
+![Main page preview](https://github.com/artemsheludko/lokmont/blob/master/images/home-page.jpg?raw=true)
+
+The post page would look like this:
+
+![Post page preview](https://github.com/artemsheludko/lokmont/blob/master/images/post-page.jpg?raw=true)
+
+* * *
+
+### Features
+
+* 100% responsive and clean theme
+* Optimized for mobile devices
 * Minimal design
-* Featured article support
-* FontAwesome implemented for easy use of icons fonts
-* Free & Open Source Font usage
+* Valid HTML5 code
+* Included site search
+* Contact Page
+* Post sharing
+* Supports Mail Chimp Subscriber
+* Supports Disqus Comments
+* Social Media Profiles
+* Formspree form
+* Font Awesome fonts
+* Google Fonts
 
-Getting Started
----
-- [Fork this repository](https://github.com/dirkfabisch/mediator)
-- Clone it: `git clone https://github.com/YOUR-USER/mediator`
-- Install the requried gems ([GitHub Pages](https://github.com/github/pages-gem), [Bourbon](https://github.com/thoughtbot/bourbon) and [Jekyll](https://github.com/jekyll/jekyll), [Jemoji](https://github.com/jekyll/jemoji)): `bundle install`
-- Run the jekyll server: `bundle exec jekyll serve`
+* * *
 
-You should have a server up and running locally at <http://localhost:4000>.
+### Deployment
 
-Configuration
------
+To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
 
-The main settings happen in side of the _config.yml file:
+I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
 
-### Site
+* * *
 
-Main settings for the site
+### Posts
 
-* **title**: name of your site
-* **description**: description of your site
-* **logo**: small logo for the site (300x * 300x)
-* **cover**: large background image on the index page
+To create a new post, you can create a new markdown file inside the _posts directory by following the [recommended file structure](https://jekyllrb.com/docs/posts/#creating-post-files).
 
-* **name**: name site owner
-* **email**: mail address of the site owner
-* **author**: author name
-* **author_image**: small image of author (300x * 300px)
-* **disqus**: add a disqus forum for your post
+```sh
+  ---
+  layout: post
+  title: 10 Best books of all time
+  date: 2017-10-27 18:09:50 +0300
+  img: 17.jpg
+  tags: [Books, Hobby]
+  author: Natali_Braxton # Optional
+  ---
+```        
 
-### Social
+You can set the tags, author and the post image.
 
-The template allows to add all major social platforms to your site.
-Fill the the form for each platform. If you leave the share_* entries empty, the sharing buttons below a post are not shown.  If you leave the **url** and **desc** empty the icons are not shown on the index page, but the share icons on the article pages remains untouched (Thanks to [Phil](https://github.com/philsturgeon))
+Add post images to **/images/pages/** directory.
 
-* **icon**:	name of social platform (must match a name of [font-awsome](http://fortawesome.github.io/Font-Awesome/) icon set )
-* **url**:	url of your account
-* **desc**: slogan of the platform
-* **share_url**: share url
-* **share_title**: first part of url for the title
-* **share_link**: second part of the share url for the link to the post
+For tags, try to not add space between two words, for example, `Ruby on Rails`, could be something like (`ruby-on-rails`, `Ruby_on_Rails`, or `Ruby-on-Rails`).
 
-The Liquid template engine will magical combine the different parts to a share url.
+* * *
 
+### Authors
+
+You can add other authors for your posts. In the beginning, create the author in the file `_config.yml`
+
+**For example:**
+
+```sh
+  # Other Authors - here you can add Other authors. For example Natali_Braxton
+  authors:
+    Natali_Braxton:
+      author-name: Natali Braxton
+      author-image: 111.jpg
+      about-author: My name is Natali Braxton. I love walking, I play the guitar in my spare time. And also write articles about different technologies.
+      author-email: natali.example@gmail.com
+      author-twitter: https://twitter.com/
+      author-facebook: https://twitter.com/
+      author-instagram: https://www.instagram.com/
+      author-pinterest: https://pinterest.com/
 ```
-http://twitter.com/share?text=post_title&amp;url=post_url
-````
 
-See [_config.yml](https://github.com/dirkfabisch/mediator/blob/master/_config.yml) for more examples.
+Then add the author in a post. Save and you are done.
 
-Licensing
----------
+```sh
+  ---
+  layout: post
+  title: 10 Best books of all time
+  date: 2017-10-27 18:09:50 +0300
+  img: 17.jpg
+  tags: [Books, Hobby]
+  author: Natali_Braxton
+  ---
+```
 
-[MIT](https://github.com/dirkfabisch/mediator/blob/master/LICENCE) with no added caveats, so feel free to use this on your site without linking back to me or using a disclaimer or anything silly like that.
+* * *
 
-Contact
--------
-I'd love to hear from you at [@dirkfabisch](https://twitter.com/dirkfabisch). Feel free to open issues if you run into trouble or have suggestions. Pull Requests always welcome.
+### Disqus
+
+Lokmont Theme comes with Disqus comments enabled.
+
+Open `_config.yml` file, and change the `mr-brown` value on line 52 with your [Disqus account shortname](https://help.disqus.com/customer/portal/articles/466208).
+
+```sh
+  # Comment Section (Disqus)
+  disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
+```     
+
+That’s all you need to setup Disqus from the theme side. If you get any issue regarding that comments are unable to load. First, make sure you have [registered your website with Disqus (Step 1)](https://help.disqus.com/customer/portal/articles/466182-publisher-quick-start-guide).
+
+And also check [Disqus troubleshooting guide](https://help.disqus.com/customer/portal/articles/472007-i-m-receiving-the-message-%22we-were-unable-to-load-disqus-%22) if you still have issues.
+
+* * *
+
+### Analytics
+
+To integrate Google Analytics, open `_config.yml`, and add your Google Analytics identifier.
+```sh
+  # Google Analytics
+  google-analytics: # Add your identifier. For example UA-99631805-1
+```     
+
+* * *
+
+### Favicon
+
+You can find the current favicon (favicon.ico) inside the theme root directory, just replace it with your new favicon.
+
+* * *
+
+### Credits
+
+We have used the following scripts, fonts or other files as listed.
+
+*   [Google Fonts](https://fonts.google.com/) (Dancing+Script, PT+Serif, Lato, Roboto).
+*   [Font Awesome](https://fontawesome.com/v4.7.0/)
+*   [FitVids.js](http://fitvidsjs.com/)
+*   [jQuery-viewport-checker](https://github.com/dirkgroenen/jQuery-viewport-checker)
+*   [Zoom](https://github.com/fat/zoom.js)
+*   [Transition](http://getbootstrap.com/javascript/#transitions)
+*   [jQuery.com](https://jquery.com/)
+*   [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search)
+*   Preview Images [unsplash.com](https://unsplash.com/), [pexels.com](https://www.pexels.com/)
+
+* * *
+
+### License
+
+MIT License
+
+* * *
+
+### Donate
+
+<p>If you want to show your appreciation, buy me one <a href="https://www.buymeacoffee.com/artemsheludko" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a> ! Every five cups of coffee and a new theme for Jekyll is ready 😋</p>
+<p>Either way, your support is a way to thank me ❤️</p>
+<p align="center"><b>Thank you for your support!</b></p>
