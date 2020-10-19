@@ -1,35 +1,35 @@
 # Site settings
-title: Lokmont
-description: Lokmont is a responsive simple theme for Jekyll.
+title: eric Blog
+description: 欢迎来到eric的Blog.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lokmont-jekyll.netlify.com/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Banner Section
 hero: 112.jpg
-hero-title: Welcome to Lokmont
-hero-description: A Responsive Jekyll Blog Theme. Theme suitable for any kind of creators.
+hero-title: 欢迎来到eric的Blog
+hero-description: 拿着望远镜，站在巨人肩膀上，就能看到比巨人更远的地方。
 
 # Author - Creator
-author-name: Ben Campbell
+author-name: eric Yc
 author-image: 10.jpg
-about-author: My name is Ben Campbell. I'm an actor and a musician. Retro wolf banjo succulen tsgoch ujang tumeric hammock offal.
-author-email: help.example@gmail.com
+about-author: 我是eric Yc，一个互联网公司的打工仔，喜欢吉他、游泳、摄影、看书，最近开始研究投资理财的相关的事情，有想发布的东西会随时记录在这上面。
+author-email: 115782249098.love@163.com
 author-twitter: https://twitter.com/
 author-facebook: https://twitter.com/
 author-instagram: https://www.instagram.com/
 author-pinterest: https://pinterest.com/
 
-# Other Authors - here you can add Other authors. For example Natali_Braxton
-authors:
-  Natali_Braxton:
-    author-name: Natali Braxton
-    author-image: 111.jpg
-    about-author: My name is Natali Braxton. I love walking, I play the guitar in my spare time. And also write articles about different technologies.
-    author-email: natali.example@gmail.com
-    author-twitter: https://twitter.com/
-    author-facebook: https://twitter.com/
-    author-instagram: https://www.instagram.com/
-    author-pinterest: https://pinterest.com/
+# # Other Authors - here you can add Other authors. For example Natali_Braxton
+# authors:
+#   Natali_Braxton:
+#     author-name: Natali Braxton
+#     author-image: 111.jpg
+#     about-author: My name is Natali Braxton. I love walking, I play the guitar in my spare time. And also write articles about different technologies.
+#     author-email: natali.example@gmail.com
+#     author-twitter: https://twitter.com/
+#     author-facebook: https://twitter.com/
+#     author-instagram: https://www.instagram.com/
+#     author-pinterest: https://pinterest.com/
 
 # Social Media Links (Links are located in hero and footer)
 twitter: https://twitter.com/

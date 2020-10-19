@@ -652,7 +652,7 @@ table tr:hover {
 .site-header {
   height: 60px;
   position: relative;
-  background-color: #0078d9;
+  background-color: #434649;
   overflow: hidden;
 }
 
@@ -1684,7 +1684,7 @@ table tr:hover {
 
 .site-footer {
   position: relative;
-  background-color: #000000;
+  background-color: #434649;
 }
 
 .site-footer .footer-wrapper {
@@ -1933,7 +1933,7 @@ table tr:hover {
 
 .form .form-group .form-btn {
   font-weight: 700;
-  background-color: #0078d9;
+  background-color: #434649;
   color: #ffffff;
   -webkit-border-radius: 3px;
           border-radius: 3px;
